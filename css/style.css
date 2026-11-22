@@ -286,4 +286,104 @@ footer p {
         max-width: 350px;
     }
 }
-    
+
+
+/* =================================
+   LOGIN PAGE DESIGN
+================================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(120deg, #eaf1ff, #dce8ff);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.login-logo {
+    width: 65px;
+    height: 65px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #26334a;
+}
+
+.login-subtitle {
+    color: #718096;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+.login-container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
+}
+
+.login-submit {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    margin-top: 25px;
+    padding: 14px;
+}
+
+.login-submit:hover {
+    background-color: #1748b5;
+}
+
+.back-home {
+    margin-top: 25px;
+}
+
+.back-home a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-home a:hover {
+    text-decoration: underline;
+}
