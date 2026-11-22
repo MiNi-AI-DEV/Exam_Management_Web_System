@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Result - Mini University</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page result-page">
+    <header class="portal-header">
+        <a class="portal-brand" href="student-dashboard.html"><span class="brand-mark">MU</span><span>Mini University <small>EXAM RESULTS</small></span></a>
+        <a class="portal-signout" href="student-dashboard.html">Student dashboard</a>
+    </header>
+    <main class="result-main">
+        <p class="eyebrow">JAVA DEVELOPER FUNDAMENTALS</p>
+        <h1 id="result-heading">Your result</h1>
+        <div class="score-display"><strong id="result-score">--%</strong><span id="result-detail">Loading result...</span></div>
+        <p class="form-message" id="result-message" aria-live="polite"></p>
+        <section class="certificate" id="certificate" hidden>
+            <div class="certificate-frame">
+                <p class="certificate-kicker">MINI UNIVERSITY</p>
+                <h2>Certificate of Achievement</h2>
+                <p class="certificate-intro">This certificate is proudly presented to</p>
+                <p class="certificate-name" id="certificate-student-name">Student Name</p>
+                <p class="certificate-copy">for successfully passing the Java Developer Fundamentals examination and demonstrating knowledge of Java programming.</p>
+                <div class="certificate-footer"><span>JAVA DEVELOPER<br><b>CERTIFIED</b></span><span>MINI UNIVERSITY</span></div>
+            </div>
+            <button class="portal-primary print-button" type="button" onclick="window.print()">Print certificate</button>
+        </section>
+        <a class="portal-secondary" href="student-dashboard.html">Return to dashboard</a>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

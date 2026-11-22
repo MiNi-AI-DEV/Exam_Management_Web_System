@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Exam Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page admin-portal">
+    <header class="portal-header">
+        <a class="portal-brand" href="index.html"><span class="brand-mark admin-mark">EMS</span><span>Exam Management <small>ADMINISTRATION</small></span></a>
+        <a class="portal-signout" href="admin-login.html">Sign out</a>
+    </header>
+    <main class="portal-main">
+        <section class="portal-welcome admin-welcome">
+            <p class="eyebrow">OVERVIEW</p>
+            <h1>Admin dashboard</h1>
+            <p>Student activity and Java certification results.</p>
+        </section>
+        <p class="form-message" id="admin-dashboard-message" aria-live="polite"></p>
+        <section class="stats-grid" aria-label="Exam management statistics">
+            <article class="stat-card"><span>Registered students</span><strong id="stat-registered">--</strong><small>All student accounts</small></article>
+            <article class="stat-card"><span>Currently logged in</span><strong id="stat-active">--</strong><small>Active student sessions</small></article>
+            <article class="stat-card"><span>Exams completed</span><strong id="stat-completed">--</strong><small>Submitted attempts</small></article>
+            <article class="stat-card"><span>Pass rate</span><strong id="stat-pass-rate">--</strong><small>Results at or above 80%</small></article>
+        </section>
+        <section class="student-records">
+            <div class="section-heading"><div><p class="eyebrow">LATEST ACTIVITY</p><h2>Recent examination results</h2></div></div>
+            <div class="table-scroll">
+                <table class="results-table">
+                    <thead><tr><th>Student</th><th>Username</th><th>Score</th><th>Outcome</th><th>Completed</th></tr></thead>
+                    <tbody id="admin-results-body"><tr><td colspan="5" class="empty-table">Connect the Spring Boot dashboard API to load results.</td></tr></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

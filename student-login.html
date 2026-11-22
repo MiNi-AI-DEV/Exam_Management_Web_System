@@ -19,21 +19,27 @@
         <h1>Student Login</h1>
         <p class="login-subtitle">
             Welcome Back! Please login to your account.</p>
-            <form onsubmit="handlelogin(event, 'student')">
-                <label for="Student Email">Email Address</label>
-                <input type="email" 
-                id="student-email" 
-                name="student-email"
-                placeholder="Enter your email" required>
+            <form onsubmit="handleLogin(event, 'student')">
+                <label for="student-username">Username</label>
+                <input type="text"
+                id="student-username"
+                name="username"
+                autocomplete="username"
+                placeholder="Enter your username" required>
 
-                <label for="Student Password">Password</label>
+                <label for="student-password">Password</label>
                 <input type="password"
                 id="student-password"
+                name="password"
+                autocomplete="current-password"
                 placeholder="Enter your password" required>
 
                 <button type="submit" class="login-submit">Login as student</button>
+                <p class="form-message" id="student-login-message" aria-live="polite"></p>
 
                 </form>
+
+        <p class="registration-prompt">New student? <a href="student-registration.html">Create an account</a></p>
 
         <p class="back-home">
             <a href="index.html">Back to Home</a>

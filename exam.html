@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Developer Examination - Mini University</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page exam-page">
+    <header class="portal-header">
+        <a class="portal-brand" href="student-dashboard.html"><span class="brand-mark">MU</span><span>Mini University <small>JAVA DEVELOPER EXAM</small></span></a>
+        <div class="exam-top-meta"><span>QUESTION <b id="question-count">1 / 20</b></span><span class="timer" id="exam-timer" aria-live="polite">20:00</span></div>
+    </header>
+    <main class="exam-layout">
+        <section class="question-panel" aria-live="polite">
+            <div class="question-meta"><span class="eyebrow">JAVA DEVELOPER FUNDAMENTALS</span><span id="question-progress">01 OF 20</span></div>
+            <h1 id="question-text">Loading examination...</h1>
+            <div id="answer-options" class="answer-options"></div>
+            <div class="question-actions">
+                <button class="review-button" id="review-button" type="button">☆ Review later</button>
+                <button class="portal-primary" id="next-question" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="form-message" id="exam-message" aria-live="polite"></p>
+        </section>
+        <aside class="question-sidebar">
+            <div class="sidebar-heading"><h2>Questions</h2><span id="answered-count">0 answered</span></div>
+            <div class="question-map" id="question-map" aria-label="Question status"></div>
+            <div class="map-legend"><span><i class="legend-dot answered"></i>Answered</span><span><i class="legend-dot review"></i>Review later</span><span><i class="legend-dot current"></i>Current</span></div>
+            <button class="submit-exam" id="submit-exam" type="button">Submit examination</button>
+        </aside>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
