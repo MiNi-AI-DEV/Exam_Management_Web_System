@@ -1,6 +1,6 @@
 
 // Route the homepage actions to their separate role-specific login forms.
-function openLogin(userType) {
+function (userType) {
     const destinations = {
         Admin: "admin-login.html",
         Student: "student-login.html"
