@@ -1,5 +1,6 @@
 I've structured the documentation around your actual project: the existing Java Exam Management console application will become a complete web-based application, with **Spring Boot handling student registration, student login, admin login, examination processing and dashboard data**.
 
+
 The README includes the project history, proposed architecture, complete folder hierarchy, Mermaid flowcharts, database design and development roadmap.
 
 # **README.md – Exam Management System**
